@@ -1,11 +1,13 @@
 #import <Foundation/Foundation.h>
-#import <stdio.h>
 
-int main(int argc, char **argv, char **envp) {
+// main MUST return an int
+int main(int argc, char **argv) {
     @autoreleasepool {
-        printf("----------------------------------\n");
-        printf(" DebLoad is running on iOS 12!\n");
-        printf("----------------------------------\n");
+        NSLog(@"Debload is running!");
+        
+        // If you want to "print" a string to the console:
+        printf("Success: Tool executed.\n");
     }
-    return 0;
+    
+    return 0; // This is the integer return the compiler is looking for
 }
